@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 // Create a new component. This component should produce
 // some HTML
 const App = function(){
@@ -6,4 +9,4 @@ const App = function(){
 
 // Take This component's generated HTML and put is
 // on the page (in the DOM)
-React.render(App);
+ReactDOM.render(App);
