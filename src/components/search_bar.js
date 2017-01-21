@@ -10,7 +10,7 @@ const SearchBar =()=>{
 
 class SearchBar extends Component{
     render(){
-        return <input />;
+        return <input onChange={event=> console.log(event.target.value)}/>;
     }
 }
 
