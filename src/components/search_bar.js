@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 /* Function component
 const SearchBar =()=>{
@@ -8,7 +8,7 @@ const SearchBar =()=>{
 
 //class component by extends React.Component we give it all accessibilities to what react component has
 
-class SearchBar extends React.Component{
+class SearchBar extends Component{
     render(){
         return <input />;
     }
