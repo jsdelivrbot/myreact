@@ -6,13 +6,20 @@ import SearchBar from './components/search_bar';
 // declare variable to hold API key
 const API_KEY='AIzaSyCDGK152IISgfnjEZrT6x4IhHeNkDrJObY';
 
-YTSearch({key:API_KEY, term:'surfboard'}, function(data){
-    console.log(data);
-});
-
 // Create a new component. This component should produce
 // some HTML
 class App extends Component{
+    constructor(props){
+
+        super(props);
+        this.state={videos:[]};
+        
+        YTSearch({key:API_KEY, term:'surfboard'}, (videos)=>{
+            this.setState({videos});
+            //this.setState({videos:videos});
+        });
+    }
+
     render(){
         return (
             <div>
